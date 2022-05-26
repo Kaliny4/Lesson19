@@ -22,7 +22,6 @@ header {
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
-	overflow: auto;
 }
 
 .container-sm {
@@ -65,11 +64,17 @@ header a {
 	margin-top: 70px;
 	display: flex;
 }
-
+.nav1 {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	box-sizing: border-box;
+}
 .nav2 {
-	justify-content: flex-end;
-	margin-left: 733px;
-	margin-top: -25px;
+	align-items: flex-end;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 202px;
 }
 
 nav li a {
@@ -85,6 +90,7 @@ nav ul {
 	align-items: center;
 }
 
+
 .logo-wrap {
 	background: #FFFFFF;
 	max-width: 81px;
@@ -97,7 +103,7 @@ nav ul {
 
 
 .section1 {
-	background: url(../media/back1green.jpg);
+	background: #0B4D3C;
 	margin-top: 35px;
 	min-height: 100vh;
 	max-height: 732px;
@@ -133,7 +139,7 @@ nav ul {
 .spot1green {
 	position: absolute;
 	top: 470px;
-	right: 0px;
+	margin-left: 973px;
 }
 
 
@@ -149,11 +155,12 @@ nav ul {
 p.section1p5 {
 	position: absolute;
 	top: 630px;
-	right: 25px;
+	left: 1132px;
 	font-size: 32px;
 	line-height: 32px;
 text-align: center;
 text-transform: uppercase;
+
 }
 
 .section2 {
@@ -173,29 +180,16 @@ text-transform: uppercase;
 	position: relative;
 }
 
-$('.owl-carousel').owlCarousel({
-	loop:true,
-	margin:10,
-	nav:true,
-	responsive:{
-					0:{
-									items:1
-					},
-					600:{
-									items:3
-					},
-					1000:{
-									items:5
-					}
-	}
-})
-
+.owl-carousel {
+	width: 100%;
+}
 .section2items {
 
 }
 
-footer {
+.footer {
 	background: #943434;
+	width: 100%;
 	bottom: 0px;
 	max-height: 840px;
 	height: 100%;
